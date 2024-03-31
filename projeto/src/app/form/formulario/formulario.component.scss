@@ -1,0 +1,53 @@
+.titulo{
+    color: #62C935;
+    text-decoration: underline;
+    text-decoration-color:#15132d ;
+    font-size: 2.5rem;
+    margin-bottom: 4%;
+    margin-top: 3.5%;
+}
+
+.w-full{
+    padding-left: 7%;
+    width: 75%;
+}
+
+.mb-4{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+label{
+    margin-right: 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #211c5d;
+}
+input{
+    font-size: 1.1rem;
+}
+
+.form-control{
+    border-width: 5px;
+    border-radius: 12px;
+    border-color: rgb(7, 155, 7);
+}
+
+#botaoDiv{
+    display: flex;
+justify-content: flex-end;
+}
+#botao-enviar{
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+#pessoaFisicaBtn{
+    margin-right: 2rem;
+}
+
+#div-tipo{
+    width: 30%;
+    min-width: 11rem;
+  }
