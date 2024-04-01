@@ -15,8 +15,10 @@ export class Cliente {
     endereco!: string;
     bairro!: string;
     cidade!: string;
+    numero!: string;
 
     telefone?: number;
+    telefoneFixo?: number;
     email!: string;
 
 }

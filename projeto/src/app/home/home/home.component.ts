@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Cliente } from 'src/app/models/cliente';
 import { ClienteService } from 'src/app/services/cliente.service';
 
@@ -25,6 +26,5 @@ export class HomeComponent implements OnInit  {
       this.clientes = this.clienteService.getAllClientes();
     }
   }
-
 
 }

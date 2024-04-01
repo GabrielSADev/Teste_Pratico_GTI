@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
 import { Cliente } from 'src/app/models/cliente';
 import { ViaCep } from 'src/app/models/via-cep';
 import { ClienteService } from 'src/app/services/cliente.service';
@@ -10,7 +9,7 @@ import { ClienteService } from 'src/app/services/cliente.service';
   templateUrl: './formulario.component.html',
   styleUrls: ['./formulario.component.scss']
 })
-export class FormularioComponent {
+export class FormularioComponent{
 
   novoCliente: Cliente = new Cliente();
 
@@ -18,9 +17,10 @@ export class FormularioComponent {
   cepBusca: string = '';
 
   mostrarAlerta: boolean = false; 
-
+  
   constructor(private clienteService: ClienteService) { }
 
+  
   adicionarCliente(clienteForm: NgForm): void {
 
     if (this.camposObrigatoriosPreenchidos()) {
@@ -44,6 +44,7 @@ export class FormularioComponent {
   }
 
   camposObrigatoriosPreenchidos(): boolean {
-    return !!this.novoCliente.tipoPessoa && !!this.novoCliente.nome && !!this.novoCliente.email;
+    return !!this.novoCliente.tipoPessoa && !!this.novoCliente.nome && !!this.novoCliente.email && !!this.novoCliente.numero;
   }
+
 }
