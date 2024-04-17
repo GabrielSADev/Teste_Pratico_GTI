@@ -1,7 +1,7 @@
 <app-header></app-header>
 <main>
     <div class="botao-class">
-        <button type="button" class="btn btn-success" id="cadastro-btn" routerLink="/formulario">Novo Cliente</button>
+        <button type="button" class="btn btn-success" id="cadastro-btn" routerLink="/formulario">Novo cliente</button>
     </div>
 
     <div class="table-responsive">
@@ -29,7 +29,7 @@
                     <td>{{ cliente.endereco }}</td>
                     <td>{{cliente.numero}}</td>
                     <td>{{ cliente.email }}</td>
-                    <td> <button type="button" class="btn btn-danger" (click)="excluirCliente(cliente.id)">Excluir</button> </td>
+                    <td> <button type="button" class="btn btn-outline-danger" (click)="excluirCliente(cliente.id)">Excluir</button> </td>
                 </tr>
             </tbody>
         </table>

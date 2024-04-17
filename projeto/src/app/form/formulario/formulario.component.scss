@@ -1,8 +1,6 @@
 .titulo{
     color: #62C935;
-    text-decoration: underline;
-    text-decoration-color:#15132d ;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 4%;
     margin-top: 3.5%;
 }
@@ -22,16 +20,16 @@ label{
     margin-right: 2rem;
     font-size: 1.1rem;
     font-weight: 700;
-    color: #211c5d;
+    color: rgb(9, 78, 9);
 }
 input{
     font-size: 1.1rem;
 }
 
 .form-control{
-    border-width: 5px;
-    border-radius: 12px;
-    border-color: rgb(7, 155, 7);
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.155);
 }
 
 #botaoDiv{
@@ -40,9 +38,19 @@ justify-content: flex-end;
 }
 #botao-enviar{
     font-size: 2rem;
-    padding: 0 2rem;
+    padding: 0 2%;
 }
-
+#botao-voltar{
+    font-size: 2rem;
+    padding: 0 2%;
+    margin-right: 5%;
+    color: white;
+    background-color: rgba(42, 1, 105, 0.758);
+}
+#botao-voltar:hover{
+    background-color: rgba(67, 5, 160, 0.901);
+    transition: 0.35s;
+}
 #pessoaFisicaBtn{
     margin-right: 2rem;
 }
